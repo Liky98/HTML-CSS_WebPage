@@ -2,213 +2,116 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Project</title>
-	<style>
-
-		    * {
-        box-sizing: border-box;
-    }
-        body {
-        font-family: sans-serif;
-        padding: 10px;
-        background: #f1f1f1;
-    }
-
-/* header부분*/
-    .header {
-        padding: 30px;
-        text-align: center;
-        background: lightgray;
-    }
-
-    .header h1 {
-        font-size: 50px;
-    }
-
-/*nav 부분*/
-		nav ul {
-    width: 100%;
-    background-color: rgba(44, 42, 39, 0.983);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-nav ul li {
-    display: inline-block;
-}
-.home {
-    background-color: lightblue;
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-    float: right;
-}
-
-.home a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 16px 16px;
-}
-.dropdown {
-    position: relative;
-}
-.dropdown-menu {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.dropdown-content {
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      display: none;
-}
-.dropdown-menu:hover:not(.home){
-    background-color: lightblue;
-    color: white;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}   
-.dropdown-content a:hover {background-color: #f1f1f1}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/*content 부분*/
- .leftcolumn {
-        float: left;
-        width: 75%;
-    }
-    .rightcolumn {
-        float: left;
-        width: 25%;
-        padding-left: 20px;
-    }
-
-   .fakeimg {
-        background-color: rgb(121, 131, 71);
-        width: 100%;
-        padding: 20px;
-    }
-
-    .card {
-        background-color: white;
-        padding: 20px;
-        margin-top: 20px;
-    }
-        .contents:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /*footer 부분*/
-    .footer {
-    padding: 30px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-}
-
-/*화면크기에 따른 조정*/
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
-}
-	</style>
+	<title>Kihoon_Home</title>
 </head>
-<body>
-	<header>
-	<div class="header">
-  <h1>Liky is Student who want Developer</h1>
-  <p>I feel it's too hard way. but I can do it. Let's coding!</p>
-	</div>
-	</header>
+	<body>
+    <table border="0" align="center">
+        <thead>
+            <tr>
+                <td>
+                    <img alt="기훈홈피로고 가상사진" width="200px">
+                </td>
 
-    <nav>
-        <ul>
-            <li class="dropdown">
-                <div class="dropdown-menu">Menu1</div>
-                <div class="dropdown-content">
-                    <a href="q3_201735998 이기훈.html">부트스트랩이용</a>
-                    <a href="#">Menu1-2</a>
-                    <a href="#">Menu1-3</a>
-                    <a href="#">Menu1-4</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <div class="dropdown-menu">Menu2</div>
-                <div class="dropdown-content">
-                    <a href="#">Menu2-1</a>
-                    <a href="#">Menu2-2</a>
-                    <a href="#">Menu2-3</a>
-                    <a href="#">Menu2-4</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <div class="dropdown-menu">Menu3</div>
-                <div class="dropdown-content">
-                    <a href="#">Menu3-1</a>
-                    <a href="#">Menu3-2</a>
-                    <a href="#">Menu3-3</a>
-                    <a href="#">Menu3-4</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <div class="dropdown-menu">Menu4</div>
-            </li>
-            <li class="home"><a href="www.github.com">Home</a></li>
-        </ul>
-    </nav>
+                <td >
+                    <form>
+                    <input type="text" name="검색" style="width:500px;" />
+                    	<input type="submit" value="검색">
+                    </form>
+                </td>
 
-<div class="contents">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>Html5 + CSS3 = I can to make blog.</h2>
-      <h5>제작일자 2020-06-02</h5>
-      <div class="fakeimg" style="height:200px;">FakeImage</div>
-      <p>Death Bed - Powfu</p>
-      <p>Don't stay awake for too long, don't go to bed<br>
-I'll make a cup of coffee for your head<br>
-It'll get you up and going out of bed</p>
-    </div>
-  </div>
 
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">FakeImage</div>
-      <p>Hello, I'm kihoon.<br>
-      	My major is Computer Engineering.<br>
-      I'm 23, live in Suwon.</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>FakeImage1</p></div>
-      <div class="fakeimg"><p>FakeImage2</p></div>
-      <div class="fakeimg"><p>FakeImage3</p></div>
-    </div>
-    <div class="card">
-      <h3>Today recommend</h3>
-      <p>21 - Gracie Abrams<br>
-      	12:45 - Etham<br>
-      The simple Things - Mickael Carreon</p>
-    </div>
-  </div>
-</div>
+                <td>
+                    <h6>기훈홈페이지를 시작페이지로</h6>
+                </td>
+            </tr>
+        </thead>
 
-<footer>
-<div class="footer">
-  <h2>블로그 추가 예정</h2>
-</div>
-</footer>
+        <tbody>
+      		<tr>
+          	<td colspan="3" align="center">
+         			<pre><a>C  C#  C++   JAVA   HTML   Spring   SQL   Linux   커뮤니티 </a>
+         			</pre>
+         			<hr>
+         			 <div align="center"> 공지 > 이 블로그는 HTML로만 작성된 것입니다. </div><br>	
+         			 <hr>
+          	</td>
+    			</tr>
+
+   				<tr>
+        		<td colspan="2">
+            	<table border="0" width="	500">
+            <caption align="left"><br>최근 게시판</caption>
+						<tr><td><hr></td></tr>
+						<tr><td>2020.05.12 |		&nbsp;마지막 작성 글입니다.</td></tr>
+						<tr><td>2020.05.01 |		&nbsp;홈페이지 작성 과정</td></tr>
+						<tr><td>2020.04.27 |		&nbsp;오늘의 하루</td></tr>
+						<tr><td>2020.04.23 |		&nbsp;HTML 사용하기</td></tr>
+						<tr><td>2020.04.07 |		&nbsp;중간고사 대체과제</td></tr>
+						<tr><td>2020.03.23 |		&nbsp;현장강의 듣고싶다</td></tr>
+							<tr><td><hr></td></tr>
+
+        		<tfoot>	<tr><td><pre><a href="#">1</a>	<a href="#">2</a>	<a href="#">3</a>	<a href="#">4</a>	<a href="#">5</a>	<a href="#">6</a>	<a href="#">7</a>	<a href="#">8</a></pre></td></tr></tfoot>
+							</table>
+						</td>
+        		<td align="center">
+        		<h5>로그인 하세요.</h5>
+        			<form >
+								ID: <br>
+								<input type="text" name="ID"> <br>
+								PassWord: <br>
+								<input type="text" name="PassWord"> <br><br>
+								<input type="submit" value="로그인">
+        		<h5>아이디 비밀번호 찾기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원가입</h5>
+        		<hr>
+        		</td>
+    			</tr>
+
+
+					<tr>
+   				 <td colspan="2" rowspan="2">
+      		 
+<br><br><br>
+       				 <table border="1">
+        		    <tr>
+                <th colspan="7" align="left">기훈 가상 사진 갤러리</th>
+        		    </tr>
+          			  <tbody>
+         				   <tr>
+          		      <td><img alt="기훈사진1" width="100" height="200"></td> <!-- src 필수속성이지만 가상으로 올렸다고 가정함으로 안씀-->
+               			<td><img alt="기훈사진2" width="100"height="200"></td>
+               			<td><img alt="기훈사진3" width="100"height="200"></td>
+              		  <td><img alt="기훈사진4" width="100"height="200"></td>
+               			<td><img alt="기훈사진5" width="100"height="200"></td>
+               			<td><img alt="기훈사진6" width="100"height="200"></td>
+               			<td><img alt="기훈사진6" width="100"height="200"></td>
+           				 </tr>
+            
+          			  </tbody>
+      				  </table>
+   			 	</td>
+   
+   			 		<td colspan="1">
+      		  	<h6>2020.05.12</h6>
+        			<h6>과제 정보</h6>
+        			<h6>웹프로그래밍 MOOC 중간고사 대체 과제 제출</h6>
+        			<h6>DB SQL작성 하고 Jira 확인하기</h6>
+        			<h6>리눅스 명령어 확인하고 사용해보기</h6>
+        			<hr>
+    				</td>
+					</tr>
+
+				</tbody>
+
+				<tfoot>
+					<tr rowspan="3">
+        		<td colspan="3">
+       			 <br><br><br><hr>
+   				
+       			 홈페이지소개 | 프로필 | 번호 | 이용약관 | 개인정보처리방침 | 청소년보호정책 | 1:1대화 | 문의 | Made by KH
+        		</td>
+    			</tr>
+
+				</tfoot>
+  	  </table>
+	</body>
 </html>
