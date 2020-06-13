@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project</title>
+	<style>
+
+		    * {
+        box-sizing: border-box;
+    }
+        body {
+        font-family: sans-serif;
+        padding: 10px;
+        background: #f1f1f1;
+    }
+
+/* header부분*/
+    .header {
+        padding: 30px;
+        text-align: center;
+        background: lightgray;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+/*nav 부분*/
+		nav ul {
+    width: 100%;
+    background-color: rgba(44, 42, 39, 0.983);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+.home {
+    background-color: lightblue;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+}
+
+.home a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 16px 16px;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      display: none;
+}
+.dropdown-menu:hover:not(.home){
+    background-color: lightblue;
+    color: white;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}   
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*content 부분*/
+ .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+
+   .fakeimg {
+        background-color: rgb(121, 131, 71);
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+        .contents:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*footer 부분*/
+    .footer {
+    padding: 30px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/*화면크기에 따른 조정*/
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+	</style>
+</head>
+<body>
+	<header>
+	<div class="header">
+  <h1>Liky is Student who want Developer</h1>
+  <p>I feel it's too hard way. but I can do it. Let's coding!</p>
+	</div>
+	</header>
+
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <div class="dropdown-menu">Menu1</div>
+                <div class="dropdown-content">
+                    <a href="#">Menu1-1</a>
+                    <a href="#">Menu1-2</a>
+                    <a href="#">Menu1-3</a>
+                    <a href="#">Menu1-4</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Menu2</div>
+                <div class="dropdown-content">
+                    <a href="#">Menu2-1</a>
+                    <a href="#">Menu2-2</a>
+                    <a href="#">Menu2-3</a>
+                    <a href="#">Menu2-4</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Menu3</div>
+                <div class="dropdown-content">
+                    <a href="#">Menu3-1</a>
+                    <a href="#">Menu3-2</a>
+                    <a href="#">Menu3-3</a>
+                    <a href="#">Menu3-4</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Menu4</div>
+            </li>
+            <li class="home"><a href="#">Home</a></li>
+        </ul>
+    </nav>
+
+<div class="contents">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Html5 + CSS3 = I can to make blog.</h2>
+      <h5>제작일자 2020-06-02</h5>
+      <div class="fakeimg" style="height:200px;">FakeImage</div>
+      <p>Death Bed - Powfu</p>
+      <p>Don't stay awake for too long, don't go to bed<br>
+I'll make a cup of coffee for your head<br>
+It'll get you up and going out of bed</p>
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">FakeImage</div>
+      <p>Hello, I'm kihoon.<br>
+      	My major is Computer Engineering.<br>
+      I'm 23, live in Suwon.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>FakeImage1</p></div>
+      <div class="fakeimg"><p>FakeImage2</p></div>
+      <div class="fakeimg"><p>FakeImage3</p></div>
+    </div>
+    <div class="card">
+      <h3>Today recommend</h3>
+      <p>21 - Gracie Abrams<br>
+      	12:45 - Etham<br>
+      The simple Things - Mickael Carreon</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+<div class="footer">
+  <h2>블로그 추가 예정</h2>
+</div>
+</footer>
+</html>
